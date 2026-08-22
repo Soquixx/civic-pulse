@@ -11,10 +11,10 @@ The backend provides three core capabilities:
 
 ## 1. Tech Stack
 
-- **Next.js** — App Router
+- **Next.js** - App Router
 - **TypeScript**
 - **Google Gemini**
-- **`@google/generative-ai`** — Gemini API SDK
+- **`@google/generative-ai`** - Gemini API SDK
 - Local JSON seed data for hotspot information
 
 ---
@@ -241,7 +241,7 @@ Simply consume:
 
 ---
 
-# 6. GET `/api/get-hotspots` — Example
+# 6. GET `/api/get-hotspots` - Example
 
 ### Request
 
