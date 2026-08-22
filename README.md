@@ -1,4 +1,4 @@
- CivicPulse - Backend & AI API Routes
+# CivicPulse - Backend & AI API Routes
 This document covers the backend and AI API routes implemented for **CivicPulse** using **Next.js App Router**, **TypeScript**, and Google's **Gemini AI SDK**.
 
 The backend provides three core capabilities:
