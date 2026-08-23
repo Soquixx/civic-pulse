@@ -1,0 +1,117 @@
+[
+  {"state":"Uttar Pradesh","code":"UP","hotspots":[
+    {"id":"up_1","location_name":"Assi Ghat Main Road","district":"Varanasi","state":"Uttar Pradesh","latitude":25.2899,"longitude":83.0068,"hazard_type":"Potholes / Washout","complaint_count":65,"urgency_score":5,"pop_density_score":90,"road_condition_index":15,"population_impact":"High / ~60,000 residents & tourists","community_need":"Emergency Hospital Transit Re-paving"},
+    {"id":"up_2","location_name":"Hazratganj Main Market Road","district":"Lucknow","state":"Uttar Pradesh","latitude":26.8467,"longitude":80.9462,"hazard_type":"Potholes / Washout","complaint_count":75,"urgency_score":4,"pop_density_score":95,"road_condition_index":25,"population_impact":"High / ~80,000 residents and shoppers","community_need":"Immediate resurfacing of major shopping stretch"},
+    {"id":"up_3","location_name":"Taj East Gate Road","district":"Agra","state":"Uttar Pradesh","latitude":27.18,"longitude":78.04,"hazard_type":"Potholes / Washout","complaint_count":55,"urgency_score":4,"pop_density_score":85,"road_condition_index":30,"population_impact":"High / ~50,000 tourists and locals","community_need":"Tourist corridor restoration"},
+    {"id":"up_4","location_name":"MG Road, Near Triveni Sangam","district":"Prayagraj","state":"Uttar Pradesh","latitude":25.4358,"longitude":81.8463,"hazard_type":"Waterlogging","complaint_count":48,"urgency_score":4,"pop_density_score":82,"road_condition_index":28,"population_impact":"High / ~55,000 pilgrims and residents","community_need":"Monsoon drainage infrastructure upgrade"},
+    {"id":"up_5","location_name":"NH-24, Ghaziabad Bypass","district":"Ghaziabad","state":"Uttar Pradesh","latitude":28.6692,"longitude":77.4538,"hazard_type":"Road Blockage","complaint_count":42,"urgency_score":3,"pop_density_score":88,"road_condition_index":32,"population_impact":"High / ~70,000 NCR commuters","community_need":"National highway expansion and safety barriers"}
+  ]},
+  {"state":"Bihar","code":"BR","hotspots":[
+    {"id":"br_1","location_name":"Bailey Road, Near Patna High Court","district":"Patna","state":"Bihar","latitude":25.6111,"longitude":85.1211,"hazard_type":"Waterlogging","complaint_count":95,"urgency_score":5,"pop_density_score":95,"road_condition_index":10,"population_impact":"Critical / ~120,000 daily administrative transit","community_need":"High-capacity storm drain construction and road elevation"},
+    {"id":"br_2","location_name":"Gandhi Maidan Marg","district":"Patna","state":"Bihar","latitude":25.6119,"longitude":85.1401,"hazard_type":"Road Blockage","complaint_count":40,"urgency_score":3,"pop_density_score":80,"road_condition_index":35,"population_impact":"Medium / ~35,000 commuters","community_need":"Traffic management and road widening"},
+    {"id":"br_3","location_name":"Boring Road Junction","district":"Patna","state":"Bihar","latitude":25.6086,"longitude":85.1012,"hazard_type":"Potholes / Washout","complaint_count":52,"urgency_score":4,"pop_density_score":85,"road_condition_index":28,"population_impact":"High / ~45,000 daily commuters","community_need":"Major arterial road resurfacing"}
+  ]},
+  {"state":"Karnataka","code":"KA","hotspots":[
+    {"id":"ka_1","location_name":"Electronic City Flyover Loop","district":"Bengaluru Urban","state":"Karnataka","latitude":12.8452,"longitude":77.6602,"hazard_type":"Bridge Damage","complaint_count":80,"urgency_score":5,"pop_density_score":90,"road_condition_index":20,"population_impact":"High / ~90,000 tech park commuters","community_need":"Emergency support pier restoration"},
+    {"id":"ka_2","location_name":"Indiranagar 100 Feet Road","district":"Bengaluru Urban","state":"Karnataka","latitude":12.9719,"longitude":77.6412,"hazard_type":"Potholes / Washout","complaint_count":22,"urgency_score":2,"pop_density_score":80,"road_condition_index":65,"population_impact":"Medium / ~35,000 commercial traffic","community_need":"Patch repair and utility trench restoration"},
+    {"id":"ka_3","location_name":"Mysuru Palace Road Junction","district":"Mysuru","state":"Karnataka","latitude":12.3052,"longitude":76.6552,"hazard_type":"Waterlogging","complaint_count":35,"urgency_score":3,"pop_density_score":60,"road_condition_index":45,"population_impact":"Medium / ~20,000 tourists and locals","community_need":"Drainage infrastructure upgrade"}
+  ]},
+  {"state":"Maharashtra","code":"MH","hotspots":[
+    {"id":"mh_1","location_name":"Western Express Highway, Andheri","district":"Mumbai","state":"Maharashtra","latitude":19.1136,"longitude":72.8697,"hazard_type":"Potholes / Washout","complaint_count":120,"urgency_score":5,"pop_density_score":98,"road_condition_index":12,"population_impact":"Critical / ~500,000 daily commuters","community_need":"Major highway resurfacing and drainage improvement"},
+    {"id":"mh_2","location_name":"Pune-Mumbai Expressway, Toll Plaza","district":"Pune","state":"Maharashtra","latitude":18.7428,"longitude":73.4565,"hazard_type":"Road Blockage","complaint_count":65,"urgency_score":4,"pop_density_score":75,"road_condition_index":30,"population_impact":"High / ~150,000 intercity travelers","community_need":"Expressway lane expansion and safety barriers"},
+    {"id":"mh_3","location_name":"Deccan Gymkhana Road","district":"Pune","state":"Maharashtra","latitude":18.5162,"longitude":73.8417,"hazard_type":"Waterlogging","complaint_count":45,"urgency_score":4,"pop_density_score":85,"road_condition_index":25,"population_impact":"High / ~60,000 residents","community_need":"Storm water drain network expansion"}
+  ]},
+  {"state":"Tamil Nadu","code":"TN","hotspots":[
+    {"id":"tn_1","location_name":"Marina Beach Road, Mylapore","district":"Chennai","state":"Tamil Nadu","latitude":13.0499,"longitude":80.2707,"hazard_type":"Waterlogging","complaint_count":85,"urgency_score":5,"pop_density_score":92,"road_condition_index":18,"population_impact":"High / ~100,000 coastal residents","community_need":"Coastal drainage and flood mitigation infrastructure"},
+    {"id":"tn_2","location_name":"GST Road, Chromepet","district":"Chennai","state":"Tamil Nadu","latitude":12.9516,"longitude":80.1462,"hazard_type":"Potholes / Washout","complaint_count":70,"urgency_score":4,"pop_density_score":88,"road_condition_index":22,"population_impact":"High / ~80,000 commuters","community_need":"Major arterial road restoration"},
+    {"id":"tn_3","location_name":"Gandhipuram Junction","district":"Coimbatore","state":"Tamil Nadu","latitude":11.0168,"longitude":76.9558,"hazard_type":"Traffic Congestion","complaint_count":55,"urgency_score":3,"pop_density_score":78,"road_condition_index":40,"population_impact":"Medium / ~45,000 daily travelers","community_need":"Junction redesign and flyover construction"}
+  ]},
+  {"state":"West Bengal","code":"WB","hotspots":[
+    {"id":"wb_1","location_name":"Park Street Crossing","district":"Kolkata","state":"West Bengal","latitude":22.5553,"longitude":88.3508,"hazard_type":"Potholes / Washout","complaint_count":60,"urgency_score":4,"pop_density_score":94,"road_condition_index":28,"population_impact":"High / ~70,000 daily commuters","community_need":"Heritage area road restoration"},
+    {"id":"wb_2","location_name":"Howrah Bridge Approach Road","district":"Howrah","state":"West Bengal","latitude":22.5851,"longitude":88.3468,"hazard_type":"Bridge Damage","complaint_count":45,"urgency_score":4,"pop_density_score":85,"road_condition_index":32,"population_impact":"High / ~200,000 daily bridge users","community_need":"Structural reinforcement and approach road repair"}
+  ]},
+  {"state":"Gujarat","code":"GJ","hotspots":[
+    {"id":"gj_1","location_name":"SG Highway Junction","district":"Ahmedabad","state":"Gujarat","latitude":23.0225,"longitude":72.5028,"hazard_type":"Potholes / Washout","complaint_count":50,"urgency_score":3,"pop_density_score":82,"road_condition_index":35,"population_impact":"Medium / ~55,000 commuters","community_need":"Highway junction improvement"},
+    {"id":"gj_2","location_name":"Dumas Road, Near Beach","district":"Surat","state":"Gujarat","latitude":21.0922,"longitude":72.7412,"hazard_type":"Waterlogging","complaint_count":40,"urgency_score":3,"pop_density_score":70,"road_condition_index":42,"population_impact":"Medium / ~30,000 residents","community_need":"Coastal drainage improvement"}
+  ]},
+  {"state":"Rajasthan","code":"RJ","hotspots":[
+    {"id":"rj_1","location_name":"MI Road Junction","district":"Jaipur","state":"Rajasthan","latitude":26.9124,"longitude":75.7873,"hazard_type":"Potholes / Washout","complaint_count":55,"urgency_score":4,"pop_density_score":88,"road_condition_index":28,"population_impact":"High / ~65,000 residents and tourists","community_need":"Tourist corridor restoration"},
+    {"id":"rj_2","location_name":"Clock Tower Market Area","district":"Jodhpur","state":"Rajasthan","latitude":26.2908,"longitude":73.0253,"hazard_type":"Road Blockage","complaint_count":35,"urgency_score":3,"pop_density_score":75,"road_condition_index":38,"population_impact":"Medium / ~25,000 market visitors","community_need":"Market area traffic management and road repair"}
+  ]},
+  {"state":"Madhya Pradesh","code":"MP","hotspots":[
+    {"id":"mp_1","location_name":"MP Nagar Zone II Road","district":"Bhopal","state":"Madhya Pradesh","latitude":23.2328,"longitude":77.4012,"hazard_type":"Potholes / Washout","complaint_count":42,"urgency_score":3,"pop_density_score":78,"road_condition_index":35,"population_impact":"Medium / ~40,000 residents","community_need":"Commercial area road resurfacing"},
+    {"id":"mp_2","location_name":"Vijay Nagar Square","district":"Indore","state":"Madhya Pradesh","latitude":22.7543,"longitude":75.8658,"hazard_type":"Traffic Congestion","complaint_count":48,"urgency_score":3,"pop_density_score":82,"road_condition_index":40,"population_impact":"Medium / ~50,000 daily commuters","community_need":"Signal modernization and lane expansion"}
+  ]},
+  {"state":"Andhra Pradesh","code":"AP","hotspots":[
+    {"id":"ap_1","location_name":"Beach Road, RK Beach Area","district":"Visakhapatnam","state":"Andhra Pradesh","latitude":17.7863,"longitude":83.3631,"hazard_type":"Waterlogging","complaint_count":38,"urgency_score":3,"pop_density_score":72,"road_condition_index":38,"population_impact":"Medium / ~30,000 beach visitors","community_need":"Coastal drainage and promenade restoration"},
+    {"id":"ap_2","location_name":"Tenneti Road, Beach Road","district":"Visakhapatnam","state":"Andhra Pradesh","latitude":17.8108,"longitude":83.3971,"hazard_type":"Potholes / Washout","complaint_count":32,"urgency_score":3,"pop_density_score":68,"road_condition_index":40,"population_impact":"Medium / ~25,000 commuters","community_need":"Coastal road restoration"}
+  ]},
+  {"state":"Telangana","code":"TS","hotspots":[
+    {"id":"ts_1","location_name":"Mehdipatnam Circle","district":"Hyderabad","state":"Telangana","latitude":17.3963,"longitude":78.4495,"hazard_type":"Potholes / Washout","complaint_count":52,"urgency_score":4,"pop_density_score":90,"road_condition_index":25,"population_impact":"High / ~60,000 commuters","community_need":"Major junction reconstruction"},
+    {"id":"ts_2","location_name":"Secunderabad Station Road","district":"Hyderabad","state":"Telangana","latitude":17.4399,"longitude":78.4983,"hazard_type":"Bridge Damage","complaint_count":35,"urgency_score":4,"pop_density_score":85,"road_condition_index":30,"population_impact":"High / ~80,000 railway commuters","community_need":"Overbridge repair and approach road restoration"}
+  ]},
+  {"state":"Kerala","code":"KL","hotspots":[
+    {"id":"kl_1","location_name":"MG Road Junction","district":"Thiruvananthapuram","state":"Kerala","latitude":8.5046,"longitude":76.9547,"hazard_type":"Potholes / Washout","complaint_count":42,"urgency_score":3,"pop_density_score":75,"road_condition_index":35,"population_impact":"Medium / ~35,000 shoppers","community_need":"Commercial street resurfacing"},
+    {"id":"kl_2","location_name":"Vytilla Mobility Hub Junction","district":"Kochi","state":"Kerala","latitude":9.9642,"longitude":76.3019,"hazard_type":"Traffic Congestion","complaint_count":55,"urgency_score":4,"pop_density_score":80,"road_condition_index":32,"population_impact":"High / ~45,000 transit users","community_need":"Multi-modal hub road network upgrade"}
+  ]},
+  {"state":"Punjab","code":"PB","hotspots":[
+    {"id":"pb_1","location_name":"Ferozepur Road Junction","district":"Ludhiana","state":"Punjab","latitude":30.901,"longitude":75.8573,"hazard_type":"Potholes / Washout","complaint_count":48,"urgency_score":4,"pop_density_score":82,"road_condition_index":30,"population_impact":"High / ~55,000 commuters","community_need":"Industrial area access road restoration"}
+  ]},
+  {"state":"Haryana","code":"HR","hotspots":[
+    {"id":"hr_1","location_name":"Cyber City Flyover","district":"Gurugram","state":"Haryana","latitude":28.4949,"longitude":77.0883,"hazard_type":"Bridge Damage","complaint_count":58,"urgency_score":4,"pop_density_score":92,"road_condition_index":28,"population_impact":"High / ~100,000 IT corridor commuters","community_need":"Flyover structural assessment and repair"}
+  ]},
+  {"state":"Odisha","code":"OD","hotspots":[
+    {"id":"od_1","location_name":"NH-16 Bypass Junction","district":"Bhubaneswar","state":"Odisha","latitude":20.2961,"longitude":85.8245,"hazard_type":"Potholes / Washout","complaint_count":45,"urgency_score":4,"pop_density_score":78,"road_condition_index":28,"population_impact":"High / ~50,000 commuters","community_need":"National highway junction improvement"}
+  ]},
+  {"state":"Jharkhand","code":"JH","hotspots":[
+    {"id":"jh_1","location_name":"Kanke Road, Near Ranchi University","district":"Ranchi","state":"Jharkhand","latitude":23.3441,"longitude":85.3096,"hazard_type":"Potholes / Washout","complaint_count":38,"urgency_score":3,"pop_density_score":70,"road_condition_index":35,"population_impact":"Medium / ~30,000 students and staff","community_need":"Educational corridor road repair"}
+  ]},
+  {"state":"Assam","code":"AS","hotspots":[
+    {"id":"as_1","location_name":"GS Road, Fancy Bazaar","district":"Guwahati","state":"Assam","latitude":26.1445,"longitude":91.7362,"hazard_type":"Waterlogging","complaint_count":55,"urgency_score":4,"pop_density_score":85,"road_condition_index":22,"population_impact":"High / ~70,000 residents","community_need":"Flood-prone area drainage overhaul"}
+  ]},
+  {"state":"Chhattisgarh","code":"CG","hotspots":[
+    {"id":"cg_1","location_name":"GE Road Junction","district":"Raipur","state":"Chhattisgarh","latitude":21.2514,"longitude":81.6296,"hazard_type":"Potholes / Washout","complaint_count":35,"urgency_score":3,"pop_density_score":72,"road_condition_index":38,"population_impact":"Medium / ~28,000 commuters","community_need":"City center road network upgrade"}
+  ]},
+  {"state":"Uttarakhand","code":"UK","hotspots":[
+    {"id":"uk_1","location_name":"Rajpur Road, Near FRI","district":"Dehradun","state":"Uttarakhand","latitude":30.3673,"longitude":78.0014,"hazard_type":"Landslide Damage","complaint_count":42,"urgency_score":5,"pop_density_score":55,"road_condition_index":25,"population_impact":"High / ~35,000 residents and tourists","community_need":"Slope stabilization and retaining wall construction"}
+  ]},
+  {"state":"Himachal Pradesh","code":"HP","hotspots":[
+    {"id":"hp_1","location_name":"Mall Road, Near Ridge","district":"Shimla","state":"Himachal Pradesh","latitude":31.1048,"longitude":77.1734,"hazard_type":"Road Blockage","complaint_count":30,"urgency_score":4,"pop_density_score":65,"road_condition_index":28,"population_impact":"Medium / ~25,000 tourists and locals","community_need":"Hill station access road maintenance"}
+  ]},
+  {"state":"Goa","code":"GA","hotspots":[
+    {"id":"ga_1","location_name":"Calangute-Baga Road","district":"North Goa","state":"Goa","latitude":15.5449,"longitude":73.7551,"hazard_type":"Potholes / Washout","complaint_count":48,"urgency_score":4,"pop_density_score":78,"road_condition_index":30,"population_impact":"High / ~60,000 tourists seasonally","community_need":"Tourist belt road restoration"}
+  ]},
+  {"state":"Jammu and Kashmir","code":"JK","hotspots":[
+    {"id":"jk_1","location_name":"Lal Chowk Intersection","district":"Srinagar","state":"Jammu and Kashmir","latitude":34.0837,"longitude":74.7973,"hazard_type":"Potholes / Washout","complaint_count":35,"urgency_score":3,"pop_density_score":75,"road_condition_index":32,"population_impact":"Medium / ~40,000 residents","community_need":"City center road restoration"}
+  ]},
+  {"state":"Chandigarh","code":"CH","hotspots":[
+    {"id":"ch_1","location_name":"Sector 17 Roundabout","district":"Chandigarh","state":"Chandigarh","latitude":30.7419,"longitude":76.7873,"hazard_type":"Potholes / Washout","complaint_count":25,"urgency_score":2,"pop_density_score":80,"road_condition_index":45,"population_impact":"Low / ~15,000 shoppers","community_need":"Commercial hub road maintenance"}
+  ]},
+  {"state":"Puducherry","code":"PY","hotspots":[
+    {"id":"py_1","location_name":"Beach Road, Near Promenade","district":"Puducherry","state":"Puducherry","latitude":11.9416,"longitude":79.8083,"hazard_type":"Waterlogging","complaint_count":30,"urgency_score":3,"pop_density_score":70,"road_condition_index":38,"population_impact":"Medium / ~20,000 tourists","community_need":"Coastal road drainage improvement"}
+  ]},
+  {"state":"Sikkim","code":"SK","hotspots":[
+    {"id":"sk_1","location_name":"MG Marg, Gangtok","district":"Gangtok","state":"Sikkim","latitude":27.3389,"longitude":88.6065,"hazard_type":"Landslide Damage","complaint_count":28,"urgency_score":4,"pop_density_score":45,"road_condition_index":30,"population_impact":"Medium / ~15,000 tourists and residents","community_need":"Hillside slope reinforcement and drainage"}
+  ]},
+  {"state":"Meghalaya","code":"ML","hotspots":[
+    {"id":"ml_1","location_name":"Police Bazar Junction","district":"East Khasi Hills","state":"Meghalaya","latitude":25.5788,"longitude":91.8933,"hazard_type":"Waterlogging","complaint_count":32,"urgency_score":3,"pop_density_score":55,"road_condition_index":35,"population_impact":"Medium / ~20,000 residents","community_need":"Urban drainage improvement for heavy rainfall zone"}
+  ]},
+  {"state":"Manipur","code":"MN","hotspots":[
+    {"id":"mn_1","location_name":"Tidim Road, Near Imphal Market","district":"Imphal West","state":"Manipur","latitude":24.8170,"longitude":93.9368,"hazard_type":"Potholes / Washout","complaint_count":25,"urgency_score":3,"pop_density_score":50,"road_condition_index":38,"population_impact":"Medium / ~18,000 market visitors","community_need":"Market access road repair"}
+  ]},
+  {"state":"Mizoram","code":"MZ","hotspots":[
+    {"id":"mz_1","location_name":"Aizawl Bawngkawn Road","district":"Aizawl","state":"Mizoram","latitude":23.7271,"longitude":92.7176,"hazard_type":"Landslide Damage","complaint_count":22,"urgency_score":4,"pop_density_score":42,"road_condition_index":28,"population_impact":"Medium / ~12,000 commuters","community_need":"Hill road slope protection and retaining walls"}
+  ]},
+  {"state":"Nagaland","code":"NL","hotspots":[
+    {"id":"nl_1","location_name":"Dimapur Super Market Road","district":"Dimapur","state":"Nagaland","latitude":25.8911,"longitude":93.7265,"hazard_type":"Potholes / Washout","complaint_count":20,"urgency_score":3,"pop_density_score":48,"road_condition_index":40,"population_impact":"Medium / ~15,000 shoppers","community_need":"Market area road resurfacing"}
+  ]},
+  {"state":"Tripura","code":"TR","hotspots":[
+    {"id":"tr_1","location_name":"GB Road Junction, Agartala","district":"West Tripura","state":"Tripura","latitude":23.8315,"longitude":91.2869,"hazard_type":"Traffic Congestion","complaint_count":28,"urgency_score":3,"pop_density_score":62,"road_condition_index":35,"population_impact":"Medium / ~22,000 commuters","community_need":"City junction modernization and flyover construction"}
+  ]},
+  {"state":"Arunachal Pradesh","code":"AR","hotspots":[
+    {"id":"ar_1","location_name":"NH-415, Itanagar Highway","district":"Papum Pare","state":"Arunachal Pradesh","latitude":27.1044,"longitude":93.6920,"hazard_type":"Road Blockage","complaint_count":18,"urgency_score":3,"pop_density_score":35,"road_condition_index":32,"population_impact":"Low / ~10,000 highway users","community_need":"Highway debris clearing and shoulder repair"}
+  ]},
+  {"state":"Ladakh","code":"LA","hotspots":[
+    {"id":"la_1","location_name":"Leh-Kargil Highway, Zoji La Approach","district":"Leh","state":"Ladakh","latitude":34.1609,"longitude":75.5490,"hazard_type":"Road Blockage","complaint_count":15,"urgency_score":4,"pop_density_score":10,"road_condition_index":20,"population_impact":"Medium / strategic military and civilian corridor","community_need":"Winter road maintenance and avalanche protection"}
+  ]}
+]
