@@ -1,0 +1,14 @@
+{
+  "request": {
+    "user_text": "Assi Ghat Road has very deep potholes that are causing traffic blocks.",
+    "language": "English"
+  },
+  "response": {
+    "translated_text": "Assi Ghat Road has very deep potholes that are causing traffic blocks.",
+    "location_name": "Assi Ghat Road",
+    "hazard_type": "Potholes / Washout",
+    "urgency_score": 3,
+    "population_impact": "High / Commuters and local residents",
+    "community_need": "Pothole repair to restore traffic flow"
+  }
+}

@@ -1,4 +1,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { promises as fs } from 'fs';
+import path from 'path';
+import crypto from 'crypto';
 
 const apiKey = process.env.GEMINI_API_KEY;
 const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : null;
@@ -28,9 +31,34 @@ export async function POST(request: Request) {
       );
     }
 
+    // Generate cache key and path
+    const normalizedText = user_text.trim().toLowerCase();
+    const normalizedLang = language.trim().toLowerCase();
+    const cacheKey = crypto
+      .createHash('md5')
+      .update(`${normalizedLang}:${normalizedText}`)
+      .digest('hex');
+    const cacheDir = path.join(process.cwd(), 'tests');
+    const cachePath = path.join(cacheDir, `voice_${cacheKey}.json`);
+
+    // Check if cache file exists
+    try {
+      const cachedContent = await fs.readFile(cachePath, 'utf-8');
+      const cachedData = JSON.parse(cachedContent);
+      if (cachedData && cachedData.response) {
+        console.log(`[Cache Hit] Serving voice analysis from ${cachePath}`);
+        return Response.json(cachedData.response, {
+          status: 200,
+          headers: corsHeaders,
+        });
+      }
+    } catch (e) {
+      // Cache miss, proceed to generate
+    }
+
     if (!genAI) {
       return Response.json(
-        { error: 'GEMINI_API_KEY is not configured on the server.' },
+        { error: 'GEMINI_API_KEY is not configured on the server and no cached response was found.' },
         { status: 500, headers: corsHeaders }
       );
     }
@@ -68,6 +96,26 @@ Return only the raw JSON. Do not include any extra markdown wrapper or text.`,
       // Cleanup markdown codeblock markers if generated
       const cleanJson = responseText.replace(/^```json\s*/i, '').replace(/```$/, '').trim();
       parsedData = JSON.parse(cleanJson);
+    }
+
+    // Save to cache
+    try {
+      await fs.mkdir(cacheDir, { recursive: true });
+      await fs.writeFile(
+        cachePath,
+        JSON.stringify(
+          {
+            request: { user_text, language },
+            response: parsedData,
+          },
+          null,
+          2
+        ),
+        'utf-8'
+      );
+      console.log(`[Cache Miss] Saved voice analysis to ${cachePath}`);
+    } catch (cacheErr) {
+      console.error('Failed to save to cache:', cacheErr);
     }
 
     return Response.json(parsedData, {

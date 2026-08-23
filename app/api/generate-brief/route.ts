@@ -1,4 +1,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { promises as fs } from 'fs';
+import path from 'path';
+import crypto from 'crypto';
 
 const apiKey = process.env.GEMINI_API_KEY;
 const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : null;
@@ -28,9 +31,34 @@ export async function POST(request: Request) {
       );
     }
 
+    // Generate cache key and path based on hotspot_data
+    // Sort keys of hotspot_data to ensure deterministic hashing
+    const sortedDataStr = JSON.stringify(hotspot_data, Object.keys(hotspot_data).sort());
+    const cacheKey = crypto
+      .createHash('md5')
+      .update(sortedDataStr)
+      .digest('hex');
+    const cacheDir = path.join(process.cwd(), 'tests');
+    const cachePath = path.join(cacheDir, `brief_${cacheKey}.json`);
+
+    // Check if cache file exists
+    try {
+      const cachedContent = await fs.readFile(cachePath, 'utf-8');
+      const cachedData = JSON.parse(cachedContent);
+      if (cachedData && cachedData.response) {
+        console.log(`[Cache Hit] Serving brief from ${cachePath}`);
+        return Response.json(cachedData.response, {
+          status: 200,
+          headers: corsHeaders,
+        });
+      }
+    } catch (e) {
+      // Cache miss, proceed to generate
+    }
+
     if (!genAI) {
       return Response.json(
-        { error: 'GEMINI_API_KEY is not configured on the server.' },
+        { error: 'GEMINI_API_KEY is not configured on the server and no cached response was found.' },
         { status: 500, headers: corsHeaders }
       );
     }
@@ -56,9 +84,30 @@ ${JSON.stringify(hotspot_data, null, 2)}`;
     });
 
     const responseText = result.response.text();
+    const proposalResponse = { proposal: responseText };
+
+    // Save to cache
+    try {
+      await fs.mkdir(cacheDir, { recursive: true });
+      await fs.writeFile(
+        cachePath,
+        JSON.stringify(
+          {
+            request: { hotspot_data },
+            response: proposalResponse,
+          },
+          null,
+          2
+        ),
+        'utf-8'
+      );
+      console.log(`[Cache Miss] Saved brief to ${cachePath}`);
+    } catch (cacheErr) {
+      console.error('Failed to save to cache:', cacheErr);
+    }
 
     return Response.json(
-      { proposal: responseText },
+      proposalResponse,
       { status: 200, headers: corsHeaders }
     );
   } catch (error: any) {
